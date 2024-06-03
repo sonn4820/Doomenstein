@@ -98,7 +98,7 @@ void Game::CreateNewMaps()
 void Game::UpdatePlayMode()
 {
 	DebugAddScreenText(Stringf("[Game Clock] Time: %.1f, FPS: %.1f, Scale: %.1f", m_clock->GetTotalSeconds(), 1.f / m_clock->GetDeltaSeconds(), m_clock->GetTimeScale()),
-		Vec2(1010.f, 780.f), 12.5f, 0.f);
+		Vec2(1010.f, 780.f), 12.5f);
 
 	HandleInput();
 	for (int i = 0; i < m_numPlayer; i++)
